@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mounika Avula — Portfolio (Creative Glow)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b002b;
+      --card: rgba(20, 10, 45, 0.9);
+      --muted: #a3bffa;
+      --accent: #8b5cf6;
+      --accent2: #ec4899;
+      --font: 'Poppins', sans-serif;
+    }
+    * { box-sizing: border-box; font-family: var(--font); }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #1e0c4a, #0b002b);
+      color: #e0e7ff;
+      line-height: 1.6;
+    }
+    .wrap { max-width:1100px; margin:40px auto; padding:28px; }
+    header, .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 0 25px rgba(236,72,153,0.1);
+      transition: 0.3s;
+    }
+    .card:hover { box-shadow: 0 0 30px rgba(139,92,246,0.4); transform: scale(1.02); }
+    h1, h2, h3 { color: white; margin-top: 0; }
+    .avatar {
+      width:110px;height:110px;border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;font-size:30px;color:#fff;
+      box-shadow:0 0 25px rgba(139,92,246,0.6);
+    }
+    .subtitle{color:var(--muted);margin-top:6px;font-size:15px}
+    .cta{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+    .cta a{
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;
+      box-shadow:0 0 12px rgba(236,72,153,0.3);transition:0.3s
+    }
+    .cta a:hover{transform:scale(1.05);box-shadow:0 0 25px rgba(236,72,153,0.6);}
+    .links{display:flex;gap:10px}
+    .links a{color:var(--muted);text-decoration:none;font-size:14px;transition:0.3s}
+    .links a:hover{color:var(--accent2);text-shadow:0 0 8px var(--accent2)}
+    main{display:grid;grid-template-columns:1fr 340px;gap:26px;margin-top:28px}
+    .lead{color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{
+      background:rgba(255,255,255,0.08);
+      padding:8px 12px;border-radius:8px;font-size:13px;color:var(--muted);
+      transition:0.3s;
+    }
+    .skill:hover{background:var(--accent2);color:#fff;box-shadow:0 0 10px var(--accent2);}
+    .projects{display:grid;gap:14px}
+    .project{
+      border-radius:12px;padding:16px;
+      background:linear-gradient(180deg,rgba(255,255,255,0.04),transparent);
+      transition:0.3s;
+    }
+    .project:hover{background:rgba(255,255,255,0.08);transform:translateY(-3px);}
+    .project h3{margin:0 0 6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+    .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.07);padding:6px 8px;border-radius:7px;font-size:12px;color:var(--muted)}
+    .tag:hover{background:var(--accent);color:#fff;box-shadow:0 0 8px var(--accent);}
+    .side-section{margin-bottom:14px}
+    .contact-row{display:flex;align-items:center;gap:10px;margin:8px 0;color:var(--muted)}
+    .edu-item{margin-bottom:10px}
+    footer{text-align:center;color:var(--muted);margin-top:28px;font-size:13px}
+    @media (max-width:900px){main{grid-template-columns:1fr}.cta{align-items:flex-start}.avatar{width:90px;height:90px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">MA</div>
+      <div style="flex:1">
+        <h1>Mounika Avula <span style="color:var(--muted);font-weight:500">— Aspiring Software Developer</span></h1>
+        <div class="subtitle">B.Tech in Electronics & Communication • Full-Stack Developer (in training) • Java / Python / React</div>
+      </div>
+      <div class="cta">
+        <a href="mailto:mounikaavula59@gmail.com">Email Mounika</a>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/mounika-avula-581ba9369/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/mounika-avula128" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card">
+          <h2>About</h2>
+          <p class="lead">Aspiring Software Developer with strong foundations in Java, Python, and Full Stack Development. Passionate about creating efficient, scalable web applications. Currently enhancing my skills in React and MongoDB as part of my training at KodNest.</p>
+
+          <h3 style="margin-top:16px">Technical Skills</h3>
+          <div class="skills">
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript (ES6)</div>
+            <div class="skill">HTML5 &amp; CSS3</div>
+            <div class="skill">React</div>
+            <div class="skill">SQL / MySQL</div>
+            <div class="skill">Git &amp; GitHub</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>IoT-Based Smart Irrigation Management System</h3>
+              <div class="meta">Embedded systems • Telemetry • Cloud</div>
+              <p>Built an IoT solution that monitors soil moisture in real-time and transmits sensor telemetry to a cloud server for analytics and automated irrigation control. Improved water efficiency by automating irrigation based on sensor and weather data.</p>
+              <div class="tags">
+                <span class="tag">Embedded</span>
+                <span class="tag">Cloud</span>
+                <span class="tag">Telemetry</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Street Light Automation System</h3>
+              <div class="meta">Sensors • Automation • Award-winning</div>
+              <p>Designed an automated street light system using ambient light sensors to control lighting, saving energy and increasing reliability. Won 1st Prize at the college project expo.</p>
+              <div class="tags">
+                <span class="tag">IoT</span>
+                <span class="tag">Sensors</span>
+                <span class="tag">Energy Efficiency</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>React Task Focus (To-Do List)</h3>
+              <div class="meta">React • MongoDB</div>
+              <p>Developing a task-management To-Do List web application using React for the frontend and MongoDB for data storage. Focused on mastering component design, state management, and CRUD functionality. This project enhances my proficiency in React and UI development.</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">CRUD</span>
+                <span class="tag">Web App</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Learning Full Stack Development at KodNest</h3>
+              <div class="meta">React • MongoDB</div>
+              <p>Currently learning Full Stack Web Development at KodNest, focusing on building scalable applications. Developing strong proficiency in React components, MongoDB integration, and user interface design.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Experience</h2>
+          <div style="margin-top:8px">
+            <strong>Full Stack Development Intern — KodNest</strong>
+            <div class="meta">May 2025 – Present</div>
+            <p class="lead">Currently undergoing training in full-stack web development using Java, React, and MongoDB; learning to design and build scalable, efficient web applications.</p>
+
+            <strong style="display:block;margin-top:10px">Embedded Systems Intern — Slash Mark</strong>
+            <div class="meta">Dec 2024 – Apr 2025</div>
+            <p class="lead">Hands-on with microcontrollers and hardware integration; assisted in IoT embedded applications.</p>
+
+            <strong style="display:block;margin-top:10px">Python Development Intern — Next24Tech</strong>
+            <div class="meta">May 2024 – Jul 2024</div>
+            <p class="lead">Built Python projects and learned backend integration and coding best practices.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card side-section">
+          <h3>Contact</h3>
+          <div class="contact-row"><strong>Phone:</strong><span style="color:var(--muted)">+91-7416402415</span></div>
+          <div class="contact-row"><strong>Email:</strong><a href="mailto:mounikaavula59@gmail.com">mounikaavula59@gmail.com</a></div>
+          <div class="contact-row"><strong>Location:</strong><span style="color:var(--muted)">Andhra Pradesh, India</span></div>
+          <div style="margin-top:8px"><a href="https://www.linkedin.com/in/mounika-avula-581ba9369/" target="_blank">LinkedIn profile</a></div>
+          <div><a href="https://github.com/mounika-avula128" target="_blank">GitHub profile</a></div>
+        </div>
+
+        <div class="card side-section">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <strong>B.Tech — Electronics &amp; Communication Engineering</strong>
+            <div class="meta">Kandula Lakshumma Memorial College of Engineering for Women (2021 – 2025) — 81%</div>
+          </div>
+          <div class="edu-item">
+            <strong>Intermediate (MPC)</strong>
+            <div class="meta">Sri Chaitanya Junior College (2019 – 2021) — 83.9%</div>
+          </div>
+          <div class="edu-item">
+            <strong>SSC</strong>
+            <div class="meta">Ushakiran High School — CGPA 9.7</div>
+          </div>
+        </div>
+
+        <div class="card side-section">
+          <h3>Certifications &amp; Awards</h3>
+          <ul style="color:var(--muted);padding-left:18px;margin:8px 0">
+            <li>NPTEL Elite Certificate — Introduction to Internet of Things</li>
+            <li>1st Prize — Project Expo (Street Light Automation)</li>
+            <li>Completed a Live Project during B.Tech</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Built with HTML &amp; CSS • Enhanced with glowing neon gradients and modern effects.
+    </footer>
+  </div>
+</body>
+</html>
